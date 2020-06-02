@@ -9,7 +9,7 @@
     content="Landing Page your/dev.">
 
   <link rel="shortcut icon" href="../src/assets/images/yp/reducedWhite.svg"/>
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6fc087a7d5.js" crossorigin="anonymous"></script>
@@ -62,26 +62,58 @@
 
     <!-- Contato -->
     <section id="form">
-      <div id="row">
-        <div id="titulos">
+      <div class="row">
+        <div id="titulos" class="col-lg-6">
           <p id="tituloForm">estamos sempre aqui</p>
           <p id="subtituloForm">Nos mande uma mensagem!</p>
         </div>
-        <div id="campos">
-          <input type="text" id="nome" name="nome" value="Seu nome:"><br>
-          <input type="text" id="email" name="email" value="Seu email:"><br>
-          <input type="text" id="mensagem" name="mensagem" value="Sua mensagem:"><br>
+        <div id="campos" class="col-lg-6">
+          <input type="text" id="nome" name="nome" placeholder="Seu nome:"><br>
+          <input type="text" id="email" name="email" placeholder="Seu email:"><br>
+          <input type="text" id="mensagem" name="mensagem" placeholder="Sua mensagem:"><br>
           <button id="botaoForm">ENVIAR</button>
         </div>
       </div>
       <div id="linhaContatos">
         <p id="endereco">Rua Rodrigo Silva, 34 - 6 andar, Centro - RJ</p>
-        <p id="telefone">21 9 9266-9888</p>
+        <p id="telefone">21 992669888</p>
         <p id="mail">yourpage@yourdev.com.br</p>
       </div>
     </section>
+  </main>
 
-    <!-- <section id="FAQ">
+  <footer>
+    <div class="linha">
+      <img id="logoYD" src="../src/assets/images/yd/branco.svg" />
+      <p id="fazemos">O que fazemos</p>
+      <p id="fizemos">O que fizemos</p>
+      <p id="somos">Quem somos</p>
+      <button id="botaoFooter">Fale com a gente</button>
+    </div>
+    <img id="hr" src="../src/assets/images/bg/hr.svg" />
+    <div class="linha2">
+      <p id="eqpB">&copy; Crescere, 2020. EquipeB &#x2764;!</p>
+      <p id="siga">Nos siga:</p>
+
+      <div class="grid icons">
+        <a target="_blank" href="https://www.yourdev.com.br">
+          <img id="yd" src="../src/assets/images/icons/yd.svg" />
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/company/yourdev/">
+          <img id="in" src="../src/assets/images/icons/in.svg" />
+        </a>
+        <a target="_blank" href="https://www.facebook.com/yourdev.br/">
+          <img id="fb" src="../src/assets/images/icons/fb.svg" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/yourdevbr/">
+          <img id="ig" src="../src/assets/images/icons/ig.svg" />
+        </a>
+      </div>
+  </footer>
+
+  <script src="../src/scripts.js"></script>
+</body>
+<!-- <section id="FAQ">
       <p id="tituloFAQ">Qual é a sua dúvida?</p>
       <p id="q1">Já tenho um site e quero reformulá-lo.</p>
       <p id="r1">Se você já tem um site, mas deseja mudar o design, formato ou incluir novas funcionalidades, escolha o Plano Custom, que oferece uma transforma- ção digital do seu negócio.</p>
@@ -95,34 +127,4 @@
       <img id="boy" src="../src/assets/images/bg/boy.svg" />
       <button id="closeFAQ"><img src="../src/assets/images/bg/close_gray.svg" /></button>
     </section> -->
-  </main>
-
-
-  <footer>
-    <img id="logoYD" src="../src/assets/images/yd/branco.svg" />
-    <p id="fazemos">O que fazemos</p>
-    <p id="fizemos">O que fizemos</p>
-    <p id="somos">Quem somos</p>
-    <button id="botaoFooter">Fale com a gente</button>
-    <img id="hr" src="../src/assets/images/bg/hr.svg" />
-    <p id="eqpB">&copy; Crescere, 2020. EquipeB &#x2764;!</p>
-    <p id="siga">Nos siga:</p>
-    <div class="grid icons">
-      <a target="_blank" href="https://www.yourdev.com.br">
-        <img id="yd" src="../src/assets/images/icons/yd.svg" />
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/company/yourdev/">
-        <img id="in" src="../src/assets/images/icons/in.svg" />
-      </a>
-      <a target="_blank" href="https://www.facebook.com/yourdev.br/">
-        <img id="fb" src="../src/assets/images/icons/fb.svg" />
-      </a>
-      <a target="_blank" href="https://www.instagram.com/yourdevbr/">
-        <img id="ig" src="../src/assets/images/icons/ig.svg" />
-      </a>
-    </div>
-  </footer>
-
-  <script src="../src/scripts.js"></script>
-</body>
 </html>

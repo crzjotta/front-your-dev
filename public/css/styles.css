@@ -355,7 +355,7 @@ main {
 
 #form {
   clear: both;
-  height: 50vh;
+  height: 60vh;
   width: 100vw;
   padding-top: 10vh;
   background: radial-gradient(95.59% 257.93% at 97.95% 1.96%, #E01F27 0%, rgba(0, 0, 0, 0.87) 100%);
@@ -363,22 +363,22 @@ main {
   flex-direction: column;
 }
 
-#row {
+.linha {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
-#titulos {
+#titulos, #campos {
   clear: both;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: space-around;
-}
+  padding-left: 5vw;
+} 
 
 #tituloForm {
   clear: both;
   width: 400px;
+  padding-top: 5vh;
   font-weight: 500;
   font-size: 40px;
   line-height: 50px;
@@ -398,59 +398,54 @@ main {
   color: #FFFFFF;
 }
 
-#campos {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: space-around;
-}
-#nome {
+#nome, #email, #mensagem, input[type=text], input:focus {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  box-sizing: border-box;
+  width: 25vw;
+  margin: 5vh 2.5vw 0 2.5vw;
   font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-#email {
-  font-size: 12px;
-}
-
-#mensage {
-  font-size: 12px;
-}
+::placeholder {color: rgba(255, 255, 255, 0.85)}
+::-ms-input-placeholder {color: rgba(255, 255, 255, 0.85)}
+::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.85)}
+::-moz-placeholder {color: rgba(255, 255, 255, 0.85)}
+:-ms-input-placeholder {color: rgba(255, 255, 255, 0.85)}
+:-moz-placeholder {color: rgba(255, 255, 255, 0.85)}
 
 #botaoForm {
-  left: 78.4%;
-  right: 9.93%;
-  top: 50.36%;
-  bottom: 42.68%;
+  width: 170px;
+  height: 40px;
+  font-weight: 450;
+  font-size: 16px;
+  letter-spacing: 0.21em;
+  text-transform: uppercase;
+  color: #FFFFFF;
   background: linear-gradient(270.12deg, #CA9696 0.03%, #E01F27 99.97%);
   box-shadow: 3.58621px 3.58621px 3.58621px rgba(0, 0, 0, 0.25);
   border-radius: 32.2759px;
+  margin-top: 5vh;
+  margin-left: 20vw;
 }
 
 #linhaContatos {
+  align-self: center;
+  display: flex;
   flex-direction: row;
   padding: 10px 0px;
 }
 
-#endereco {
-  left: 21.39%;
-  right: 53.54%;
-  top: 76.96%;
-  bottom: 16.07%;
-}
-
-#telefone {
-  width: 132px;
-  height: 39px;
-  left: 725px;
-  top: 431px;
-}
-
-#mail {
-  left: 63.4%;
-  right: 21.39%;
-  top: 76.96%;
-  bottom: 16.07%;
+#endereco, #telefone, #mail {
+  box-sizing: border-box;
+  padding: 5vh 2.5vw 0 2.5vw;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.0516em;
+  font-feature-settings: 'kern' off;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 @media (max-width: 414px) {
@@ -461,33 +456,72 @@ main {
   }
 }
 
-.icons {
-  width: 0vw;
-  margin-left: 49vw;
+footer {
+  clear: both;
+  width: 100vw;
+  height: 40vh;
+  background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
-.siga {
-  display: flex;
-}
-
-footer {
-  clear: both;
-  position: absolute;
-  width: 100vw;
-  height: 50vw;
-  left: 0px;
-  top: 2440px;
-  /* height: 50vh;
-  padding: 100vw; */
-  background-color: pink;
-}
-
 #logoYD {
+  padding: 3vh 0 0 2vw;
+  width: 300px;
+}
+
+#fazemos, #fizemos, #somos {
+  color: #FFFFFF;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin: 5vh 2.5vw 0 2.5vw;
+}
+
+#botaoFooter {
   clear: both;
-  width: auto;
-  height: 7vh;
-  margin-left: 5px;
+  width: 140px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  box-sizing: border-box;
+  margin: 5vh 2.5vw 0 2.5vw;
+  background: #FFFFFF;
+  color: black;
+  border-radius: 6px;
+}
+
+#hr {
+  margin: 0;
+  padding: 0;
+}
+
+#eqpB {
+  font-size: 15px;
+  letter-spacing: -0.015em;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 5vw;
+  flex:4;
+}
+
+#siga {
+  font-size: 15px;
+  flex: 0.5;
+  letter-spacing: -0.015em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.icons {
+  margin-right: 5vw;
+  height: 45px;
+}
+
+.linha2 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-content: center;
 }
