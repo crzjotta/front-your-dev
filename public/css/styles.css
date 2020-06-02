@@ -355,20 +355,33 @@ main {
 
 #form {
   clear: both;
-  width: 1440px;
-  height: 560px;
+  height: 50vh;
+  width: 100vw;
+  padding-top: 10vh;
   background: radial-gradient(95.59% 257.93% at 97.95% 1.96%, #E01F27 0%, rgba(0, 0, 0, 0.87) 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+#row {
+  display: flex;
+  flex-direction: row;
+}
+
+#titulos {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 #tituloForm {
   clear: both;
-  width: 467.35px;
-  height: 147px;
-  left: 107px;
-  top: 86px;
+  width: 400px;
   font-weight: 500;
-  font-size: 58.2453px;
-  line-height: 73px;
+  font-size: 40px;
+  line-height: 50px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -385,36 +398,23 @@ main {
   color: #FFFFFF;
 }
 
-#form {
+#campos {
   clear: both;
-  /* display: absolute; */
+  display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
 }
-
 #nome {
-  left: 52.85%;
-  right: 42.92%;
-  top: 19.64%;
-  bottom: 77.68%;
   font-size: 12px;
-  line-height: 15px;
 }
 
 #email {
-  left: 52.85%;
-  right: 42.57%;
-  top: 30.54%;
-  bottom: 66.79%;
   font-size: 12px;
 }
 
 #mensage {
-  left: 52.85%;
-  right: 40.69%;
-  top: 41.43%;
-  bottom: 55.89%;
   font-size: 12px;
-  line-height: 15px;
 }
 
 #botaoForm {
@@ -475,7 +475,19 @@ main {
 
 footer {
   clear: both;
+  position: absolute;
+  width: 100vw;
+  height: 50vw;
+  left: 0px;
+  top: 2440px;
   /* height: 50vh;
   padding: 100vw; */
   background-color: pink;
+}
+
+#logoYD {
+  clear: both;
+  width: auto;
+  height: 7vh;
+  margin-left: 5px;
 }
