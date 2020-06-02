@@ -9,6 +9,7 @@
     content="Landing Page your/dev.">
 
   <link rel="shortcut icon" href="../src/assets/images/yp/reducedWhite.svg"/>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6fc087a7d5.js" crossorigin="anonymous"></script>
@@ -17,9 +18,9 @@
 <body>
   <!-- Header -->
   <header id="top" class="menu">
-    <a href="#sobre"><img id="logo" src="../src/assets/images/yp/blackNred.svg"></a>
+    <a href="#welcome"><img id="logo" src="../src/assets/images/yp/redNwhite.svg"></a>
     <ul>
-      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="https://www.yourdev.com.br/design_ao_codigo" target="__blank">Sobre</a></li>
       <li><a href="#planos">Planos</a></li>
       <li><a href="#FAQ">FAQ</a></li>
       <li><a href="#contato">Contato</a></li>
@@ -36,24 +37,26 @@
     <!-- Planos -->
     <section id="planos" class="planos">
       <p id="tituloPlanos">Nossos planos</p>
-      <article id="easy">
-        <p id="tituloEasy">Plano Easy</p>
-        <p id="subtituloEasy">A partir de R$100</p>
-        <p id="descricaoEasy">Para sites de até 5 páginas.</p>
-        <button onclick="window.location" href="https://www.w3docs.com" id="botaoEasy">Contrate agora</button>
-      </article>
-      <article id="hard">
-        <p id="tituloHard">Plano Hard</p>
-        <p id="subtituloHard">A partir de R$200</p>
-        <p id="descricaoHard">Para sites de até 10 páginas, com 3 meses de hospedagem inclusos.</p>
-        <button onclick="window.location" href="https://www.w3docs.com" id="botaoHard">Contrate agora</button>
-      </article>
-      <article id="custom">
-        <p id="tituloCustom">Plano Custom</p>
-        <p id="subtituloCustom">A partir de R$300</p>
-        <p id="descricaoCustom">Para quem já tem um site ou quer criar projetos mais complexos.</p>
-        <button onclick="window.location" href="https://www.w3docs.com" id="botaoCustom">Contrate agora</button>
-      </article>
+      <div id="boxes">
+        <article id="easy">
+          <p id="tituloEasy">Plano Easy</p>
+          <p id="subtituloEasy">A partir de R$100</p>
+          <p id="descricaoEasy">Para sites de até 5 páginas.</p>
+          <button href="#" id="botaoEasy">Contrate agora</button>
+        </article>
+        <article id="hard">
+          <p id="tituloHard">Plano Hard</p>
+          <p id="subtituloHard">A partir de R$200</p>
+          <p id="descricaoHard">Para sites de até 10 páginas, com 3 meses de hospedagem inclusos.</p>
+          <button href="#" id="botaoHard">Contrate agora</button>
+        </article>
+        <article id="custom">
+          <p id="tituloCustom">Plano Custom</p>
+          <p id="subtituloCustom">A partir de R$300</p>
+          <p id="descricaoCustom">Para quem já tem um site ou quer criar projetos mais complexos.</p>
+          <button href="#" id="botaoCustom">Contrate agora</button>
+        </article>
+      </div>
       <img id="linhaProcesso" src="../src/assets/images/icons/linhaProcesso.svg" />
     </section>
 
