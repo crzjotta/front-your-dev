@@ -9,7 +9,10 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 0.75em;
   overflow-x: hidden;
-} 
+  background-image: url(../images/bg/trans_digital_red.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 @media (min-width: 320px) {
   body {
@@ -51,7 +54,7 @@ header {
   z-index: 3;
 }
 
-.menu li{
+.menu li {
   padding: 10px;
   list-style: none;
 }
@@ -85,7 +88,11 @@ main {
   clear: both;
   height: 100vh;
   width: 100vw;
-  background: radial-gradient(129.49% 147.55% at 109.72% 223.94%, #E01F27 24.26%, rgba(0, 0, 0, 0.87) 100%);
+  background: radial-gradient(
+    129.49% 147.55% at 109.72% 223.94%,
+    #e01f27 24.26%,
+    rgba(0, 0, 0, 0.87) 100%
+  );
   display: flex;
   text-align: center;
   align-items: center;
@@ -105,7 +112,7 @@ main {
   left: 360px;
   top: 291px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 60px;
   line-height: 60px;
   display: flex;
@@ -116,11 +123,11 @@ main {
   clear: both;
   width: 773px;
   height: 129px;
-  left: calc(50% - 773px/2 - 0.5px);
-  top: calc(50% - 129px/2 + 85.5px);
+  left: calc(50% - 773px / 2 - 0.5px);
+  top: calc(50% - 129px / 2 + 85.5px);
   font-size: 36px;
   line-height: 43px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #botaoWelcome {
@@ -130,7 +137,7 @@ main {
   font-weight: 500;
   font-size: 36px;
   line-height: 43px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 91px;
 }
@@ -143,7 +150,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: radial-gradient(94.34% 123.01% at 97.29% 99.1%, #E01F27 0%, rgba(0, 0, 0, 0.87) 100%);
+  background: radial-gradient(
+    94.34% 123.01% at 97.29% 99.1%,
+    #e01f27 0%,
+    rgba(0, 0, 0, 0.87) 100%
+  );
 }
 
 #tituloPlanos {
@@ -151,7 +162,7 @@ main {
   margin: 2vh 0 4vh 5vw;
   font-weight: 500;
   font-size: 45px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #boxes {
@@ -169,7 +180,7 @@ main {
   justify-content: space-evenly;
   width: 250px;
   height: 300px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
 }
@@ -182,7 +193,7 @@ main {
   max-width: 240px;
   font-weight: 500;
   font-size: 35px;
-  color: #AC181D;
+  color: #ac181d;
 }
 
 #subtituloEasy {
@@ -194,7 +205,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 38px;
-  color: #E01F25;
+  color: #e01f25;
 }
 
 #descricaoEasy {
@@ -205,7 +216,7 @@ main {
   max-width: 200px;
   font-size: 15px;
   line-height: 20px;
-  color: #E01F25;
+  color: #e01f25;
 }
 
 #botaoEasy {
@@ -216,8 +227,8 @@ main {
   width: 177px;
   height: 33.45px;
   font-size: 20px;
-  color: #FFFFFF;
-  background: #E01F25;
+  color: #ffffff;
+  background: #e01f25;
   box-shadow: 1.8px 1.8px 1.8px rgba(0, 0, 0, 0.25);
   border-radius: 42.3px;
   margin-bottom: 20px;
@@ -231,7 +242,7 @@ main {
   justify-content: space-evenly;
   width: 250px;
   height: 300px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
 }
@@ -244,7 +255,7 @@ main {
   max-width: 240px;
   font-weight: 500;
   font-size: 35px;
-  color: #AC181D;
+  color: #ac181d;
 }
 
 #subtituloHard {
@@ -256,7 +267,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 38px;
-  color: #E01F25;
+  color: #e01f25;
 }
 
 #descricaoHard {
@@ -267,7 +278,7 @@ main {
   max-width: 200px;
   font-size: 15px;
   line-height: 20px;
-  color: #E01F25;
+  color: #e01f25;
 }
 
 #botaoHard {
@@ -278,8 +289,8 @@ main {
   width: 177px;
   height: 33.45px;
   font-size: 20px;
-  color: #FFFFFF;
-  background: #E01F25;
+  color: #ffffff;
+  background: #e01f25;
   box-shadow: 1.85827px 1.85827px 1.85827px rgba(0, 0, 0, 0.25);
   border-radius: 42.2756px;
   margin-bottom: 20px;
@@ -293,7 +304,7 @@ main {
   justify-content: space-evenly;
   width: 250px;
   height: 300px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
 }
@@ -307,7 +318,7 @@ main {
   font-weight: 500;
   font-size: 35px;
   line-height: 50px;
-  color: #AC181D;
+  color: #ac181d;
 }
 
 #subtituloCustom {
@@ -319,7 +330,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 38px;
-  color: #E01F25;
+  color: #e01f25;
 }
 
 #descricaoCustom {
@@ -330,7 +341,7 @@ main {
   max-width: 200px;
   font-size: 15px;
   line-height: 20px;
-  color: #E01F25;
+  color: #e01f25;
 }
 
 #botaoCustom {
@@ -341,8 +352,8 @@ main {
   width: 177px;
   height: 33.45px;
   font-size: 20px;
-  color: #FFFFFF;
-  background: #E01F25;
+  color: #ffffff;
+  background: #e01f25;
   box-shadow: 1.85827px 1.85827px 1.85827px rgba(0, 0, 0, 0.25);
   border-radius: 42.2756px;
   margin-bottom: 20px;
@@ -360,7 +371,11 @@ main {
   height: 60vh;
   width: 100vw;
   padding-top: 10vh;
-  background: radial-gradient(95.59% 257.93% at 97.95% 1.96%, #E01F27 0%, rgba(0, 0, 0, 0.87) 100%);
+  background: radial-gradient(
+    95.59% 257.93% at 97.95% 1.96%,
+    #e01f27 0%,
+    rgba(0, 0, 0, 0.87) 100%
+  );
   display: flex;
   flex-direction: column;
 }
@@ -372,10 +387,11 @@ main {
   align-content: space-between;
 }
 
-#titulos, #campos {
+#titulos,
+#campos {
   clear: both;
   padding-left: 5vw;
-} 
+}
 
 #tituloForm {
   clear: both;
@@ -386,7 +402,7 @@ main {
   line-height: 50px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #subtituloForm {
@@ -397,10 +413,14 @@ main {
   top: 255px;
   font-size: 21px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-#nome, #email, #mensagem, input[type=text], input:focus {
+#nome,
+#email,
+#mensagem,
+input[type="text"],
+input:focus {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.85);
@@ -411,12 +431,24 @@ main {
   color: rgba(255, 255, 255, 0.85);
 }
 
-::placeholder {color: rgba(255, 255, 255, 0.85)}
-::-ms-input-placeholder {color: rgba(255, 255, 255, 0.85)}
-::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.85)}
-::-moz-placeholder {color: rgba(255, 255, 255, 0.85)}
-:-ms-input-placeholder {color: rgba(255, 255, 255, 0.85)}
-:-moz-placeholder {color: rgba(255, 255, 255, 0.85)}
+::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
 
 #botaoForm {
   width: 170px;
@@ -425,8 +457,8 @@ main {
   font-size: 16px;
   letter-spacing: 0.21em;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background: linear-gradient(270.12deg, #CA9696 0.03%, #E01F27 99.97%);
+  color: #ffffff;
+  background: linear-gradient(270.12deg, #ca9696 0.03%, #e01f27 99.97%);
   box-shadow: 3.58621px 3.58621px 3.58621px rgba(0, 0, 0, 0.25);
   border-radius: 32.2759px;
   margin-top: 5vh;
@@ -440,13 +472,15 @@ main {
   padding: 10px 0px;
 }
 
-#endereco, #telefone, #mail {
+#endereco,
+#telefone,
+#mail {
   box-sizing: border-box;
   padding: 5vh 2.5vw 0 2.5vw;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.0516em;
-  font-feature-settings: 'kern' off;
+  font-feature-settings: "kern" off;
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -473,8 +507,10 @@ footer {
   width: 300px;
 }
 
-#fazemos, #fizemos, #somos {
-  color: #FFFFFF;
+#fazemos,
+#fizemos,
+#somos {
+  color: #ffffff;
   font-size: 15px;
   box-sizing: border-box;
   margin: 5vh 2.5vw 0 2.5vw;
@@ -488,7 +524,7 @@ footer {
   font-weight: 500;
   box-sizing: border-box;
   margin: 5vh 2.5vw 0 2.5vw;
-  background: #FFFFFF;
+  background: #ffffff;
   color: black;
   border-radius: 6px;
 }
@@ -503,7 +539,7 @@ footer {
   letter-spacing: -0.015em;
   color: rgba(255, 255, 255, 0.8);
   margin-left: 5vw;
-  flex:4;
+  flex: 4;
 }
 
 #siga {
